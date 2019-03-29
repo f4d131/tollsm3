@@ -28,12 +28,11 @@ figlet MIX-Tools | lolcat
 
 sleep 1
 
-echo -e $cyan"________________________________________"
-echo -e $g  " Tools       : WELLCOME         " 
-echo -e $g  " Author      : f4dl " 
-echo -e $g  " Contact     : ENJOY YOUR LIFE " 
-
-echo -e $cyan "_______________________________________" 
+echo -e $cyan"__________________"
+echo -e $g    "SELAMAT DATANG" 
+echo -e $g    "Author by f4dl" 
+echo -e $g    "ENJOY YOUR LIFE" 
+echo -e $cyan "__________________" 
 
 sleep 1
 echo -e $g"     ____MENU____ "
@@ -44,23 +43,23 @@ echo -e $g "   (2) SPAM JD.ID${endc}";
 echo -e $g "   (3) PRANK CALL${endc}";
 echo -e $g "   (4) Finder Admin${endc}";
 echo -e $g "   (5) Yahoo Cloning{endc}";
-echo -e $g "   (69) EXIT{endc}";
+echo -e $g "   (00) EXIT{endc}";
 echo -e $g" =============================="
 echo""
 echo -e $g "Silakan pilih Menu yang anda inginkan" 
 read -p "=>" go ;
 figlet f4dl | lolcat
 
-if $pil in;
-1)apt update
+if $pil 1
+apt update
 apt upgrade
 pip2 install mechanize
 git clone https://github.com/f4dl/mbf.git
 cd mbf
 python2 mbf.py
 
-else $pil in;
-2) apt update
+else $pil 2
+apt update
 apt upgrade
 pkg install php
 git clone https://github.com/f4dl/spm-jd.id.git
@@ -68,8 +67,8 @@ cd gaskan
 php gaskan.php
 
 
-else $pil in;
-3) apt update
+else $pil 3
+ apt update
 apt upgrade
 pkg install php
 git clone https://github.com/f4dl/prank-call.git
@@ -77,34 +76,34 @@ cd siap
 php siap.php
 
 
-else $pil in;
-4) apt update
+else $pil 4
+apt update
 apt upgrade
 pkg install python2
 git clone https://github.com/f4d131/web4dmin.git
 cd panel
 python2 panel.py
 
-else $pil in;
-5) apt update
+else $pil 5
+apt update
 apt upgrade
 pkg install python2
 git clone https://github.com/f4dl/yahooCloning.git
 cd cloning
 python2 cloning.py
 
-else $pil in;
-5) apt update
-apt upgrade
-pkg install python2
-git clone https://github.com/f4dl/yahooCloning.git
-cd cloning
-python2 cloning.py
-
-if else $pil in;
-69) echo -e $cyan"SAMPAI JUMPA" 
+else $pil 00
+echo -e $cyan"SAMPAI JUMPA" 
 echo -e $cyan"THANKS :)"
-printf "\e[103m\e[1;77mAuthor: f4dl\e[0m\n"
+print "\e[103m\e[1;77mAuthor: f4dl\e[0m\n"
+print ('''
+  _____  _____     .___.__   
+_/ ____\/  |  |  __| _/|  |  
+\   __\/   |  |_/ __ | |  |  
+ |  | /    ^   / /_/ | |  |__
+ |__| \____   |\____ | |____/
+           |__|     \/       
+''')
 sleep 2
 exit
 
