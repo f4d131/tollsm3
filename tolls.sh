@@ -50,7 +50,7 @@ echo -e $g "Silakan pilih Menu yang anda inginkan"
 read -p "=>" go ;
 figlet f4dl | lolcat
 
-case $pil in;
+case $go in;
 1)apt update
 apt upgrade
 pip2 install mechanize
