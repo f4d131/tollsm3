@@ -14,7 +14,6 @@ pip2 install requests -y
 pip2 install termcolor -y
 
 
-python pass.py
 
 python rest.py
 clear
@@ -22,6 +21,8 @@ printf "  \e[101m\e[1;77m  ==============================\e[0m\n"
 printf "  \e[101m\e[1;77m GUNAKAN TOLLS INI DENGAN BIJAK\e[0m\n"
 printf "  \e[101m\e[1;77m  ==============================\e[0m\n"
 
+python2 pass.py
+clear
 g='\E[32m'
 cyan='\e[1;36m'
 
