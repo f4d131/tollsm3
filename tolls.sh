@@ -43,60 +43,68 @@ echo -e $g "   (1) FB MBF ${enda}";
 echo -e $g "   (2) SPAM JD.ID${endc}";
 echo -e $g "   (3) PRANK CALL${endc}";
 echo -e $g "   (4) Finder Admin${endc}";
-echo -e $g "   (5) Yahoo Cloning{endc}";
-echo -e $g "   (00) EXIT{endc}";
+echo -e $g "   (5) Yahoo Cloning${endc}";
+echo -e $g "   (00) EXIT${endc}";
 echo -e $g" =============================="
 echo""
 echo -e $g "Silakan pilih Menu yang anda inginkan" 
-read -p "=>" go ;
+read -p "root@f4dl~#" gas
+
 figlet f4dl | lolcat
 
-case $go in;
-1)apt update
+if [ $gas = 1 ] || [ $gas = 1 ]
+then
+apt update
 apt upgrade
 pip2 install mechanize
 git clone https://github.com/f4dl/mbf.git
 cd mbf
 python2 mbf.py
+fi
 
-;;
-
-2)apt update
+if [ $gas = 2 ] || [ $gas = 2 ]
+then
+apt update
 apt upgrade
 pkg install php
 git clone https://github.com/f4dl/spm-jd.id.git
 cd gaskan
 php gaskan.php
+fi
 
-;;
-
-3)apt update
+if [ $gas = 3 ] || [ $gas = 3 ]
+then
+apt update
 apt upgrade
 pkg install php
 git clone https://github.com/f4dl/prank-call.git
 cd siap
 php siap.php
+fi
 
-;;
-
-4)apt update
+if [ $gas = 4 ] || [ $gas = 4 ]
+then
+apt update
 apt upgrade
 pkg install python2
 git clone https://github.com/f4d131/web4dmin.git
 cd panel
 python2 panel.py
+fi
 
-;;
-
-5)apt update
+if [ $gas = 5 ] || [ $gas = 5 ]
+then
+apt update
 apt upgrade
 pkg install python2
 git clone https://github.com/f4dl/yahooCloning.git
 cd cloning
 python2 cloning.py
+fi
 
-
-6)echo -e $cyan"SAMPAI JUMPA" 
+if [ $gas = 6 ] || [ $gas = 6 ]
+then
+echo -e $cyan"SAMPAI JUMPA" 
 echo -e $cyan"THANKS :)"
 print "\e[103m\e[1;77mAuthor: f4dl\e[0m\n"
 print ('''
@@ -110,6 +118,6 @@ _/ ____\/  |  |  __| _/|  |
 sleep 2
 exit
 
-done
+fi
  clear()
 
