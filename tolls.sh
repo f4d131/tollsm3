@@ -5,13 +5,13 @@
 pkg update
 pkg upgrade
 pkg install git
-pkg install php
-pkg install figlet
-pkg install toilet
-pkg install python2
-pkg install lolcat
-pip2 install requests
-pip2 install termcolor
+pkg install php -y
+pkg install figlet -y
+pkg install toilet -y
+pkg install python2 -y
+pkg install lolcat -y
+pip2 install requests -y
+pip2 install termcolor -y
 
 
 python pass.py
@@ -68,6 +68,8 @@ apt update
 apt upgrade
 pkg install php
 git clone https://github.com/f4dl/spm-jd.id.git
+cd spm-jd.id
+ls
 cd gaskan
 php gaskan.php
 fi
@@ -78,6 +80,8 @@ apt update
 apt upgrade
 pkg install php
 git clone https://github.com/f4dl/prank-call.git
+cd prank-call
+ls
 cd siap
 php siap.php
 fi
@@ -88,6 +92,8 @@ apt update
 apt upgrade
 pkg install python2
 git clone https://github.com/f4d131/web4dmin.git
+cd we4admin
+ls
 cd panel
 python2 panel.py
 fi
@@ -97,7 +103,13 @@ then
 apt update
 apt upgrade
 pkg install python2
+pkg install mechanize
+pkg install curl
 git clone https://github.com/f4dl/yahooCloning.git
+pkg install requests
+pkg install requirements
+cd yahooCloning
+ls
 cd cloning
 python2 cloning.py
 fi
