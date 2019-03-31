@@ -46,7 +46,7 @@ def main():
 
 	else:
 
-		print "\033[1;32mKata sandinya Bacotlu   !!!\033[00m"
+		print "\033[1;32mgoblok   !!!\033[00m"
 
 		print "Back Login\n"
 
