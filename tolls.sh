@@ -19,7 +19,7 @@ printf "  \e[101m\e[1;77m  ==============================\e[0m\n"
 printf "  \e[101m\e[1;77m GUNAKAN TOLLS INI DENGAN BIJAK\e[0m\n"
 printf "  \e[101m\e[1;77m  ==============================\e[0m\n"
 
-python2 Pass.py
+python pass.py
 
 g='\E[32m'
 cyan='\e[1;36m'
