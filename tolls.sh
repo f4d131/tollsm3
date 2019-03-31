@@ -50,50 +50,52 @@ echo -e $g "Silakan pilih Menu yang anda inginkan"
 read -p "=>" go ;
 figlet f4dl | lolcat
 
-if $pil 1
-apt update
+case $pil in;
+1)apt update
 apt upgrade
 pip2 install mechanize
 git clone https://github.com/f4dl/mbf.git
 cd mbf
 python2 mbf.py
 
-else $pil 2
-apt update
+;;
+
+2)apt update
 apt upgrade
 pkg install php
 git clone https://github.com/f4dl/spm-jd.id.git
 cd gaskan
 php gaskan.php
 
+;;
 
-else $pil 3
- apt update
+3)apt update
 apt upgrade
 pkg install php
 git clone https://github.com/f4dl/prank-call.git
 cd siap
 php siap.php
 
+;;
 
-else $pil 4
-apt update
+4)apt update
 apt upgrade
 pkg install python2
 git clone https://github.com/f4d131/web4dmin.git
 cd panel
 python2 panel.py
 
-else $pil 5
-apt update
+;;
+
+5)apt update
 apt upgrade
 pkg install python2
 git clone https://github.com/f4dl/yahooCloning.git
 cd cloning
 python2 cloning.py
 
-else $pil 00
-echo -e $cyan"SAMPAI JUMPA" 
+
+6)echo -e $cyan"SAMPAI JUMPA" 
 echo -e $cyan"THANKS :)"
 print "\e[103m\e[1;77mAuthor: f4dl\e[0m\n"
 print ('''
@@ -107,4 +109,7 @@ _/ ____\/  |  |  __| _/|  |
 sleep 2
 exit
 
+esc
 done
+ clear()
+
