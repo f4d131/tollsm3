@@ -13,13 +13,14 @@ pkg install lolcat
 pip2 install requests
 pip2 install termcolor
 
+
+python pass.py
+
 python rest.py
 clear
 printf "  \e[101m\e[1;77m  ==============================\e[0m\n"
 printf "  \e[101m\e[1;77m GUNAKAN TOLLS INI DENGAN BIJAK\e[0m\n"
 printf "  \e[101m\e[1;77m  ==============================\e[0m\n"
-
-python pass.py
 
 g='\E[32m'
 cyan='\e[1;36m'
@@ -109,7 +110,6 @@ _/ ____\/  |  |  __| _/|  |
 sleep 2
 exit
 
-esc
 done
  clear()
 
