@@ -10,18 +10,19 @@ pkg install figlet -y
 pkg install toilet -y
 pkg install python2 -y
 pkg install lolcat -y
+pkg install curl clang -y
 pip2 install requests -y
 pip2 install termcolor -y
 
 
 
-python rest.py
 clear
 printf "  \e[101m\e[1;77m  ==============================\e[0m\n"
 printf "  \e[101m\e[1;77m GUNAKAN TOLLS INI DENGAN BIJAK\e[0m\n"
 printf "  \e[101m\e[1;77m  ==============================\e[0m\n"
 
 python2 pass.py
+python rest.py
 clear
 g='\E[32m'
 cyan='\e[1;36m'
@@ -37,7 +38,7 @@ echo -e $g    "ENJOY YOUR LIFE"
 echo -e $cyan "__________________" 
 
 sleep 1
-echo -e $g"     ____MENU____ "
+echo -e $g"=============MENU============== "
 sleep 2
 echo -e $g" =============================="
 echo -e $g "   (1) FB MBF ${enda}";
@@ -65,8 +66,6 @@ fi
 
 if [ $gas = 2 ] || [ $gas = 2 ]
 then
-apt update
-apt upgrade
 pkg install php
 git clone https://github.com/f4dl/spm-jd.id.git
 cd spm-jd.id
@@ -77,8 +76,6 @@ fi
 
 if [ $gas = 3 ] || [ $gas = 3 ]
 then
-apt update
-apt upgrade
 pkg install php
 git clone https://github.com/f4dl/prank-call.git
 cd prank-call
@@ -89,9 +86,6 @@ fi
 
 if [ $gas = 4 ] || [ $gas = 4 ]
 then
-apt update
-apt upgrade
-pkg install python2
 git clone https://github.com/f4d131/web4dmin.git
 cd we4admin
 ls
@@ -101,14 +95,9 @@ fi
 
 if [ $gas = 5 ] || [ $gas = 5 ]
 then
-apt update
-apt upgrade
-pkg install python2
-pkg install mechanize
-pkg install curl
 git clone https://github.com/f4dl/yahooCloning.git
-pkg install requests
-pkg install requirements
+pip2 install mechanize
+pip2 install requirements
 cd yahooCloning
 ls
 cd cloning
